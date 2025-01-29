@@ -1,12 +1,19 @@
+'use client';
+
 import React from 'react';
+import { useRouter } from 'next/navigation';
 import '@/styles/vlog-hero.scss';
 
-const WelcomeScreen = ({ onGetStarted }: { onGetStarted: () => void }) => {
+const WelcomeScreen = () => {
+  // export default function WelcomeScreen() {
   const [isVisible, setIsVisible] = React.useState(true);
+  const router = useRouter();
 
   const handleGetStarted = () => {
     setIsVisible(false);
-    setTimeout(onGetStarted, 500); // アニメーション後にonGetStartedを実行
+    // setTimeout(onGetStarted, 500); // アニメーション後にonGetStartedを実行
+    document.body.style.overflow = 'auto';
+    router.push('blog/menu');
   };
 
   return (

@@ -19,7 +19,7 @@ export default function SampleWebsites() {
   };
 
   const navigateToBlog = () => {
-    router.push('/blog?showWelcome=true');
+    router.push('/blog');
   };
 
   return (

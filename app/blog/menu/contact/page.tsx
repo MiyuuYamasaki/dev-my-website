@@ -28,31 +28,19 @@ export default function ContactPage() {
     e.preventDefault();
     setSubmitStatus('idle');
 
+    // This is where you'd typically send the form data to your backend
+    // For this example, we'll just simulate a successful submission
     try {
-      const response = await fetch('http://localhost:5000/send-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          name,
-          email,
-          message,
-        }),
-      });
+      // Simulate API call
+      await new Promise((resolve) => setTimeout(resolve, 1000));
 
-      const data = await response.json();
-
-      if (data.status === 'success') {
-        setSubmitStatus('success');
-        setName('');
-        setEmail('');
-        setMessage('');
-      } else {
-        setSubmitStatus('error');
-      }
+      // Simulate successful submission
+      setSubmitStatus('success');
+      setName('');
+      setEmail('');
+      setMessage('');
     } catch (error) {
-      console.error('Error sending message:', error);
+      console.error('error:' + error);
       setSubmitStatus('error');
     }
   };

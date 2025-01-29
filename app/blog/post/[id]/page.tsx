@@ -25,7 +25,7 @@ const blogPosts: BlogPost[] = [
   },
   {
     id: '3',
-    title: 'Afternoontea',
+    title: 'Afternoon Tea',
     date: '2025-01-18',
     content:
       "This is the full content of my first blog post. It's been an exciting journey starting this blog, and I can't wait to share more of my thoughts and experiences with you all.",
@@ -54,7 +54,7 @@ export default function BlogPost() {
   }
 
   const handleClick = () => {
-    router.push('/blog?showWelcome=false');
+    router.push('/blog/menu');
   };
 
   return (

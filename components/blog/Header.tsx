@@ -9,7 +9,7 @@ const Header = () => {
   const lastSegment: string = pathname.split('/').pop() || ''; // スラッシュで分割し、最後の部分を取得
 
   const menu: { [key: string]: string } = {
-    blog: 'My Blog',
+    menu: 'My Blog',
     admin: 'Admin',
     about: 'About',
     contact: 'Contact',

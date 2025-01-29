@@ -25,7 +25,7 @@ const HamburgerMenu = () => {
     if (route === 'close') {
       setIsOpen(!isOpen);
     } else if (route === 'home') {
-      router.push('/blog?showWelcome=false');
+      router.push('/blog/menu');
     } else {
       router.push(`/blog/menu/${route}`);
     }
