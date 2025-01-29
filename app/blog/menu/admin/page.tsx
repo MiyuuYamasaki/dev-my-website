@@ -26,9 +26,15 @@ export default function Admin() {
     e.preventDefault();
     setError('');
 
-    // This is a mock authentication. In a real application, you'd want to call an API endpoint.
-    if (username === 'admin' && password === 'db') {
-      // Set a flag in localStorage to indicate the user is logged in
+    const res = await fetch('/api/login', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ username, password }),
+    });
+
+    // const data = await res.json();
+
+    if (res.ok) {
       localStorage.setItem('isLoggedIn', 'true');
       router.push('admin/dashboard');
     } else {

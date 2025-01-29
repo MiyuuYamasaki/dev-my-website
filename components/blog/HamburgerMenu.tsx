@@ -14,10 +14,10 @@ const HamburgerMenu = () => {
 
   // 動的なルーティング用に name を key とする
   const menus = [
+    { name: 'Home', route: 'home' },
     { name: 'Admin', route: 'admin' },
     { name: 'About', route: 'about' },
     { name: 'Contact', route: 'contact' },
-    { name: 'Home', route: 'home' },
     { name: 'Close', route: 'close' },
   ];
 
@@ -82,8 +82,8 @@ const HamburgerMenu = () => {
         <div className="p-8 space-y-6 flex flex-col items-center">
           {menus.map((menu, index) => {
             if (menu.route === 'home') {
-              // "Back"の場合、パスに「admin」が含まれている場合のみ表示
-              if (!pathname.endsWith('/blog')) {
+              // mainの場合homeボタンを設置しない
+              if (!pathname.endsWith('/menu')) {
                 return (
                   <button
                     key={index}

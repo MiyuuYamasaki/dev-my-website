@@ -42,8 +42,6 @@ const blogPosts: BlogPost[] = [
   // Add more blog posts here
 ];
 
-// `params.id`は非同期に解決する必要はありません。同期的に扱います。
-// export default function BlogPost({ params }: { params: { id: number } }) {
 export default function BlogPost() {
   const postId = useParams<{ id: string }>().id;
   const post = blogPosts.find((post) => post.id === postId);
