@@ -52,6 +52,7 @@ export default function ContactPage() {
         setSubmitStatus('error');
       }
     } catch (error) {
+      console.error('Error sending message:', error);
       setSubmitStatus('error');
     }
   };

@@ -23,22 +23,22 @@ export default function AboutPage() {
                 John Doe
               </h2>
               <p className="text-primary mb-4">
-                Hello! I'm John, a passionate web developer and tech enthusiast.
-                I created this blog to share my journey in the world of
-                technology, focusing on web development, software engineering,
-                and the latest tech trends.
+                Hello! I&apos;m John, a passionate web developer and tech
+                enthusiast. I created this blog to share my journey in the world
+                of technology, focusing on web development, software
+                engineering, and the latest tech trends.
               </p>
               <p className="text-primary mb-4">
-                With over 5 years of experience in the field, I've worked on
-                various projects ranging from small business websites to
+                With over 5 years of experience in the field, I&apos;ve worked
+                on various projects ranging from small business websites to
                 large-scale enterprise applications. My expertise includes
                 React, Next.js, Node.js, and cloud technologies.
               </p>
               <p className="text-primary">
-                When I'm not coding, you can find me hiking in the mountains,
-                reading sci-fi novels, or experimenting with new recipes in the
-                kitchen. Feel free to reach out if you want to collaborate or
-                just chat about tech!
+                When I&apos;m not coding, you can find me hiking in the
+                mountains, reading sci-fi novels, or experimenting with new
+                recipes in the kitchen. Feel free to reach out if you want to
+                collaborate or just chat about tech!
               </p>
             </div>
           </div>
